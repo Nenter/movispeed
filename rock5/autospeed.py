@@ -1,8 +1,13 @@
 from playwright.sync_api import sync_playwright
-
+"""
+Se necesita playwright libreria:
+!#/bin/bash
+sudo apt install python3
+sudo pip3 install playwright
+"""
 def run(playwright):
     browser = playwright.chromium.launch(
-        headless=False,
+        headless=False, #False muestra ventana. True oculta.
         args =['--ignore-certificate-errors'],
     )
     context = browser.new_context()
