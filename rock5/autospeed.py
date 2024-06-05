@@ -14,6 +14,7 @@ def run(playwright):
     page = context.new_page()
 
     try:
+        #http://movispeed.es/movispeed/movispeed5.php
         page.goto('https://movispeed.es/movispeed/', wait_until="domcontentloaded")
     except playwright._impl._errors.TimeoutError:
         pass
