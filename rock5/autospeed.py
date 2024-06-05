@@ -7,7 +7,7 @@ sudo pip3 install playwright
 """
 def run(playwright):
     browser = playwright.chromium.launch(
-        headless=False, #False muestra ventana. True oculta.
+        headless=True, #False muestra ventana. True oculta.
         args =['--ignore-certificate-errors'],
     )
     context = browser.new_context()
