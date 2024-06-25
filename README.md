@@ -8,3 +8,5 @@ playwright install-deps
 
 #para ssh:
 passwd 
+#En windows
+ssh-keygen -R 192.168.1.62
