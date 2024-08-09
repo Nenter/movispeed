@@ -1,4 +1,4 @@
-#Sets RK3588 GPIOS 8 & 10 to a blinking state to let user know that a program is running.
+#Sets RK3588 GPIOS 8 & 10 to a blinking state to let user know that autospeed.py is running.
 #Setting gpio to LOW:
 gpioset gpiochip0 14=0
 gpioset gpiochip0 13=0
