@@ -48,3 +48,14 @@ with sync_playwright() as playwright:
     print("success: ", success)
     print("Download: ", total_download_mbps," Mbps")
     print("Upload ", total_upload_mbps," Mbps")
+if abs(total_upload_mbps-total_download_mbps) > 100: #More than 100Mbps diff is not ok
+    success = False
+# Path to the file where you want to store the value
+file_path = "/test_results.txt"
+
+# Open the file in write mode and store the value
+with open(file_path, 'w') as file:
+    file.write(success)
+    file.write(total_download_mbps)
+    file.write(total_upload_mbps)
+    
