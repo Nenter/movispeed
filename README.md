@@ -1,3 +1,10 @@
+# Archivos para lanzar tests a movispeed
+Libreria con archivos de prueba para lanzar tests de forma automática a movispeed desde una PCB (rock pi) 
+para acelerar las pruebas en instalaciones FTTH Movistar.
+
+
+
+
 # Instrucciones:
 sudo apt-get update
 sudo apt-get upgrade
